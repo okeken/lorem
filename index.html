@@ -8,30 +8,90 @@
     <link rel="stylesheet" href="mystyle.css" />
   </head>
   <body>
-    <h2>
-      Loremisicit. Numquam, magni.
-    </h2>
-    <p>
-      Lorem ipsum dre exercitationem itaque?
-    </p>
+    <h1 class="heading">
+      Lorem Ipsum Generator
+    </h1>
+    <div class="app-body">
+      <form>
+        <input type="text" id="num" value="15" />
+        <div class="custom-select" style="width: 200px;">
+          <select name="" id="lorem-criteria">
+            <option value="words">word</option>
+            <option value="sentence" id="opt-sentence">sentence</option>
+            <option value="paragraph" id="opt-para">paragraph</option>
+          </select>
+        </div>
+        <button type="submit" id="generate-btn">Generate</button>
+      </form>
 
-    <form>
-      <span id="user-response">Hello world</span>
-      <br />
-      <input type="text" id="num" value="15" />
-      <select name="" id="lorem-criteria">
-        <option value="words">Words</option>
-        <option value="sentence">Sentence</option>
-        <option value="paragraph">Paragraph</option>
-      </select>
-      <button type="submit" id="generate-btn">Generate</button>
-    </form>
-    <div class="w-70" id="lorem-gen-body">
-      <span id="copy-btn">Copy Text</span>
-      <textarea id="lorem-text-body">
-        Lorem delindus maiores sit
-      </textarea>
+      <div class="w-70" id="lorem-gen-body">
+        <p id="copy-btn">Copy Text</p>
+        <textarea id="lorem-text-body">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nobis et eos eligendi, porro itaque! Officia voluptas tempore minima reiciendis nam blanditiis provident eius perferendis. </textarea
+        >
+        <div class="lorem-faq">
+          <h2>Frequently Asked Questions About Lorem Ipsum And Generator</h2>
+          <details>
+            <summary>What is a Lorem Ipsum generator?</summary>
+            <p>
+              Epcot is a theme park at Walt Disney World Resort featuring
+              exciting attractions, international pavilions, award-winning
+              fireworks and seasonal special events.
+            </p>
+          </details>
+
+          <details>
+            <summary>What does Lorem Ipsum actually say?</summary>
+            <p>
+              Epcot is a theme park at Walt Disney World Resort featuring
+              exciting attractions, international pavilions, award-winning
+              fireworks and seasonal special events.
+            </p>
+          </details>
+          <details>
+            <summary>Who invented Lorem Ipsum?</summary>
+            <p>
+              Epcot is a theme park at Walt Disney World Resort featuring
+              exciting attractions, international pavilions, award-winning
+              fireworks and seasonal special events.
+            </p>
+          </details>
+          <details>
+            <summary>History of Lorem Ipsum?</summary>
+            <p>
+              Epcot is a theme park at Walt Disney World Resort featuring
+              exciting attractions, international pavilions, award-winning
+              fireworks and seasonal special events.
+            </p>
+          </details>
+          <details>
+            <summary>What language is Lorem Ipsum?</summary>
+            <p>
+              Epcot is a theme park at Walt Disney World Resort featuring
+              exciting attractions, international pavilions, award-winning
+              fireworks and seasonal special events.
+            </p>
+          </details>
+          <details>
+            <summary>Why do we use Lorem Ipsum?</summary>
+            <p>
+              Epcot is a theme park at Walt Disney World Resort featuring
+              exciting attractions, international pavilions, award-winning
+              fireworks and seasonal special events.
+            </p>
+          </details>
+          <details>
+            <summary>Is Lorem Ipsum Latin or Greek?</summary>
+            <p>
+              Epcot is a theme park at Walt Disney World Resort featuring
+              exciting attractions, international pavilions, award-winning
+              fireworks and seasonal special events.
+            </p>
+          </details>
+        </div>
+      </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
