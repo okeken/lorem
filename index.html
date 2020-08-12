@@ -39,14 +39,16 @@
       Lorem Ipsum Generator
     </h1>
     <div class="app-body">
+
       <form>
         <input type="text" id="num" value="15" />
-        <div class="custom-select" style="width: 200px;">
-          <select name="" id="lorem-criteria">
-            <option value="words">word</option>
-            <option value="sentence" id="opt-sentence">sentence</option>
-            <option value="paragraph" id="opt-para">paragraph</option>
+        <div class="cus-div">
+          <select class="cus-select select-ele" id="lorem-criteria">
+            <option value="words">Words</option>
+            <option value="sentence" id="opt-sentence">Sentence</option>
+            <option value="paragraph" id="opt-para">Paragraphs</option>
           </select>
+          <span class="cus-arrow"></span>
         </div>
         <button type="submit" id="generate-btn">Generate</button>
       </form>

@@ -69,7 +69,7 @@ summary {
   margin: 0.6rem 1rem;
 }
 button {
-  width: 10%;
+  width: 20%;
   outline: 0;
   background: whitesmoke;
   border: 2px solid dodgerblue;
@@ -138,4 +138,51 @@ button {
 .select-items div:hover,
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cus-div {
+  position: relative;
+  display: inline-block;
+}
+.cus-select {
+  padding: 0.5rem 3rem 0.5rem 1.5rem;
+  font-size: 1.3rem;
+  background: dodgerblue;
+  border: 0;
+  color: white;
+}
+.cus-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 3rem;
+  height: 100%;
+  background: rgb(66, 155, 243);
+  pointer-events: none;
+}
+
+.cus-arrow::before,
+.cus-arrow::after {
+  --size: 0.5rem;
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cus-arrow::before {
+  top: 70%;
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid whitesmoke;
+}
+
+.cus-arrow::after {
+  bottom: 40%;
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid whitesmoke;
 }
